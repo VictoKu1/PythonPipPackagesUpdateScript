@@ -12,17 +12,18 @@ fi
 
 
 
-# Ask the user if he wants to install or remove the service
+clear
 echo "Do you want to install or remove the service?"
 echo "1. Install"
 echo "2. Remove"
 read -p "Enter your choice [1-2]: " choice
-# Make sure the choice is valid
+
+
 
 
 
 case $choice in
-   1) echo "You chose to install"
+   1) echo "Installing....."
       touch /bin/updatePip
       chmod +x /bin/updatePip
       echo "#!/bin/sh" >> /bin/updatePip
@@ -33,7 +34,11 @@ case $choice in
       echo "" >> /bin/updatePip
       echo "" >> /bin/updatePip
       echo "sh $local_dir/update.sh" >> /bin/updatePip;;
-   2) echo "You chose to remove"
+   2) echo "Removing....."
       rm -rf /bin/updatePip ;;
    *) echo "Invalid choice";;
 esac
+
+
+
+
