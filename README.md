@@ -1,4 +1,4 @@
-# PythonPipPackagesUpdateScript
+# Python Pip Packages Update Script
 Basic script for updating all python pip packages.
 
 
