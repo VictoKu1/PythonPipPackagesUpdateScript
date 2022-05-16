@@ -2,36 +2,34 @@
 
 
 
------
 Basic script for updating all python pip packages.
 
-
------
 #### Usage
 
+##### &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; For one time :
+
+```
+         git clone https://github.com/VictoKu1/PythonPipPackagesUpdateScript.git
+         cd PythonPipPackagesUpdateScript
+         sh update.sh
+```
 -----
-##### For one time :
+##### &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; For a reusable command updatePip :
 
 ```
-git clone https://github.com/VictoKu1/PythonPipPackagesUpdateScript.git
-cd PythonPipPackagesUpdateScript
-sh update.sh
+         git clone https://github.com/VictoKu1/PythonPipPackagesUpdateScript.git
+         cd PythonPipPackagesUpdateScript
+         sudo sh manager.sh
 ```
------
-##### For a reusable command updatePip :
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; And after that you can use the 
+```
+         updatePip
+```
 
-```
-git clone https://github.com/VictoKu1/PythonPipPackagesUpdateScript.git
-cd PythonPipPackagesUpdateScript
-sudo sh manager.sh
-```
-And after that you can use the 
-```
-updatePip
-```
-command from every location.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; command from every location.
 
 
------
+
+
 
 If it doesnt work as planned, please contact me.
