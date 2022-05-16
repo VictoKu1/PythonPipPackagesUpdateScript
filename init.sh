@@ -34,6 +34,6 @@ case $choice in
       echo "" >> /bin/updatePip
       echo "sh $local_dir/update.sh" >> /bin/updatePip;;
    2) echo "You chose to remove"
-      rm -rf /bin/updatePip ../$(dirname $(readlink -f $0)) ;;
+      rm -rf /bin/updatePip ;;
    *) echo "Invalid choice";;
 esac
