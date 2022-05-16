@@ -1,10 +1,15 @@
 # Python Pip Packages Update Script
+
+
+
+-----
 Basic script for updating all python pip packages.
 
 
+-----
 #### Usage
 
-
+-----
 ##### For one time :
 
 ```
@@ -12,7 +17,7 @@ git clone https://github.com/VictoKu1/PythonPipPackagesUpdateScript.git
 cd PythonPipPackagesUpdateScript
 sh update.sh
 ```
-
+-----
 ##### For a reusable command updatePip :
 
 ```
@@ -26,3 +31,7 @@ updatePip
 ```
 command from every location.
 
+
+-----
+
+If it doesnt work as planned, please contact me.
