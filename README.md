@@ -18,7 +18,7 @@ sh update.sh
 ```
 git clone https://github.com/VictoKu1/PythonPipPackagesUpdateScript.git
 cd PythonPipPackagesUpdateScript
-sudo sh init.sh
+sudo sh manager.sh
 ```
 And after that you can use the 
 ```
