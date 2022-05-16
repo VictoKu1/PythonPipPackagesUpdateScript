@@ -35,7 +35,7 @@ case $choice in
       echo "" >> /bin/updatePip
       echo "sh $local_dir/update.sh" >> /bin/updatePip;;
    2) echo "Removing....."
-      rm -rf /bin/updatePip ;;
+      rm -rf /bin/updatePip requirements.txt ;;
    *) echo "Invalid choice";;
 esac
 
