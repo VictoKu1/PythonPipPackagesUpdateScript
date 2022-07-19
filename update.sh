@@ -1,7 +1,9 @@
+#!/bin/sh
+
 echo "Prepearing....."
 sleep 1.5s
 pip freeze > requirements.txt
-python change.py  requirements.txt "==" ">="
+python change.py requirements.txt "==" ">="
 clear
 lines=$(wc -l requirements.txt | awk '{print $1}')
 counter=0
@@ -23,3 +25,4 @@ rm -rf requirements.txt
 echo "Update completed ."
 sleep 1s
 clear
+
