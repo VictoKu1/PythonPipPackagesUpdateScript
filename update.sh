@@ -3,7 +3,7 @@
 echo "Prepearing....."
 sleep 1.5s
 pip freeze > requirements.txt
-python change.py requirements.txt "==" ">="
+python3 PythonPipPackagesUpdateScript/change.py requirements.txt "==" ">="
 clear
 lines=$(wc -l requirements.txt | awk '{print $1}')
 counter=0
