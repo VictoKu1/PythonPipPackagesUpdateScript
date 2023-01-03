@@ -1,28 +1,28 @@
-#!/bin/bash
+#!/bin/sh
+
 echo "Prepearing....."
 sleep 1.5s
 pip freeze > requirements.txt
 python3 PythonPipPackagesUpdateScript/change.py requirements.txt "==" ">="
 clear
 lines=$(wc -l requirements.txt | awk '{print $1}')
+counter=0
 echo "Started updating requirements.txt"
 sleep 2.5s
 clear
 timeOfStart=$(date +%s)
-commands=()
-for ((counter=1; counter<=lines; counter++))
+while [ $counter -lt $lines ]
     do
         line=$(sed -n "${counter}p" requirements.txt)
+        counter=$((counter+1))
         timeNow=$(date +%s)
         timeWorking=$((timeNow-timeOfStart))
-        commands+=("clear;echo \"Progress: $((counter*100/lines))%, $((counter)) packages done, $((lines-counter)) packages remaining of total $((lines)) packages.\";pip install --upgrade $line;echo \"\"")
-        echo "Progress: $((counter*100/lines))%."
+        echo "Progress: $((counter*100/lines))%, currently package $counter of $lines packages, $((lines-counter)) remaining, time working: $(date -d@$timeWorking -u +%H:%M:%S)."
+        pip install --upgrade $line
         clear
     done
-echo "Starting packages updating"
-parallel --jobs 10 ::: "${commands[@]}"
-wait
 rm -rf requirements.txt
-echo "Update completed successfully."
+echo "Update completed ."
 sleep 1s
 clear
+
