@@ -1,8 +1,11 @@
 # Python Pip Packages Update Script
 
-
-
 Basic script for updating all python pip packages.
+
+#### Requirements
+```
+    sudo apt install parallel
+```
 
 #### Usage
 
@@ -27,9 +30,6 @@ Basic script for updating all python pip packages.
 ```
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; command from every location.
-
-
-
 
 
 If it doesnt work as planned, please contact me.
